@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <h1>24. Funciones motoras. Reacción de elección</h1>
+    <p>Instrucciones:
+      "Ahora, cuando yo dé un golpe sobre la mesa, usted deberá dar dos golpes; pero cuando yo dé dos golpes,
+      usted no deberá dar ninguno".</p>
+      <p>Observaciones:
+        Una vez comprendidas las instrucciones, la tarea se repite cinco veces, dando al azar uno o dos golpes.</p>
+      <p>Calificación:</p>
+      <br>
+      <p>0 = no lo hizo.</p>
+      <p>1 = lo hizo con errores.</p>
+      <p>2 = lo hizo correctamente.</p>
+      <br>
+      <p>La puntuación máxima posible es de 2 puntos.</p>
+      
+  </div>
+  <div>
+    <div>
+      <label for="dato1">Intento 1:</label>
+      <input type="number" min="0" max="2" [(ngModel)]="dato1" name="dato1">
+    </div>
+    <div>
+      <label for="dato2">Intento 2:</label>
+      <input type="number" min="0" max="2" [(ngModel)]="dato2" name="dato2">
+    </div>
+    <div>
+      <label for="dato3">Intento 3:</label>
+      <input type="number" min="0" max="2" [(ngModel)]="dato3" name="dato3">
+    </div>
+    <div>
+      <label for="dato4">Intento 4:</label>
+      <input type="number" min="0" max="2" [(ngModel)]="dato4" name="dato4">
+    </div>
+    <div>
+      <label for="dato5">Intento 5:</label>
+      <input type="number" min="0" max="2" [(ngModel)]="dato5" name="dato5">
+    </div>
+    <button (click)="guardarDatos()">Guardar</button>
+  </div>
+  
+
+  
+</body>
+</html>
